@@ -3,27 +3,62 @@ ul {
   padding: 0;
 }
 
-.view {
-  display: grid;
-  grid-template-columns: 100px 1fr;
-  grid-template-rows: auto 1fr auto;
+.el-header {
+  border-bottom: 1px solid black;
+} 
+
+.el-header, .el-footer {
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+  line-height: 60px;
 }
 
-.channel {
-  grid-row: 1 / span 3;
-  grid-column: 1 / 2;
+.el-aside {
+  background-color: #4a3a4a;
+  text-align: center;
+  width: 100px !important;
 }
 
-.channel-name {
-  grid-area: 1 / 2;
+.el-aside a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.messages {
-  grid-area: 2 / 2;
-  height: 300px;
-  overflow: scroll; 
+.el-main {
+  background-color: #fff;
+  color: #333;
+  text-align: center;
 }
 
-.form {
-  grid-area: 3 / 2;
+.el-container {
+  height: 100vh;
+}
+
+.el-input {
+  width: 50%;
+}
+
+.el-table {
+  width: 100%;
+}
+
+.grid-content {
+  min-height: 25px;
+  padding: 0 6px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+}
+
+.date {
+  font-size: 12px;
+}
+
+.message {
+  font-size: 14px;
 }
