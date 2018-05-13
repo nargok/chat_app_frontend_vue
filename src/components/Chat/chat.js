@@ -3,6 +3,7 @@ import {
   //  SET_MESSAGE,
    GET_CHANNELS
  } from '../../store/mutation-types'
+import MessageList from '../MessageList'
 
 export default {
   name : 'chat',
@@ -10,6 +11,9 @@ export default {
     this.GET_CHANNELS()
     // メッセージを取得する
     this.GET_MESSAGES(this.$route.params.cname)
+  },
+  components: {
+    'message-list': MessageList
   },
   computed: {
     ...mapGetters([
