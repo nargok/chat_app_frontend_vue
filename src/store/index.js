@@ -9,7 +9,8 @@ Vue.use(Vuex)
 
 // component間をまたがって使用するデータを定義する
 const state = {
-  messages: []
+  messages: [],
+  channels: []
 }
 
 export default new Vuex.Store({
