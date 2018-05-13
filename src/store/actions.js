@@ -8,10 +8,11 @@ export default {
     commit(SET_MESSAGE, message)
   },
   [GET_CHANNELS] ({commit}) {
-    fetch('https://us-central1-demoapp-chat-server.cloudfunctions.net/v1/chennels').then((response) => {
-      return response.json()
-    }).then((json) => {
+    async function fetchAPI(){
+      const response = await fetch('https://us-central1-demoapp-chat-server.cloudfunctions.net/v1/chennels')
+      const json = await response.json()
       commit(GET_CHANNELS, json.channels)
-    })
+    }
+    retchAPI()
   }
 }
